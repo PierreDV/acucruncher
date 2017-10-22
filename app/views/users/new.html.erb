@@ -1,3 +1,16 @@
 <% provide(:title, 'Signup') %>
 <h1>Create an Account</h1>
 <p>Comment and rate posts. Apply to become a contributor.</p>
+
+<%= form_with model: @user do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :confirm_password, "Confirmation" %>
+  <%= f.password_field :confirm_password %>
+
+  <%= f.submit "Create Account" %>
+<% end %>

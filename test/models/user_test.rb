@@ -2,7 +2,9 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(email: 'daria@example.com')
+    @user = User.new(email: 'daria@example.com',
+                     password: 'password',
+                     password_confirmation: 'password')
   end
 
   test 'email validation should accept valid addresses' do

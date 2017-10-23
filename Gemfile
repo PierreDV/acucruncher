@@ -28,6 +28,7 @@ group :development do
 end
 
 group :test do
+  gem 'rails-controller-testing'
   gem 'mini_backtrace'
   gem 'minitest'
   gem 'minitest-reporters'

@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
-  resources :users
+  resources :users, only: %i[new create]
 end
